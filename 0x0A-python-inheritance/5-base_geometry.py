@@ -8,4 +8,7 @@ should follow in future tasks
 
 
 class BaseGeometry:
+    """
+    Empty class Base Geometry
+    """
     pass
