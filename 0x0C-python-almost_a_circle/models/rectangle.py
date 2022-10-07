@@ -164,3 +164,27 @@ class Rectangle(Base):
         value of the rectangle instance
         """
         return (self.__width * self.__height)
+
+    def display(self):
+        """
+         Function that prints in stdout the rectangle
+        with the character #.
+        Returns:
+            Rectangle with the character #.
+        """
+        if self.width == 0:
+            print('')
+        elif self.height == 0:
+            print('')
+        else:
+            print('\n' * self.__y +
+                  '\n'.join([' ' * self.__x +
+                            '#' * self.width for rows in range(self.height)]))
+
+    def __str__(self):
+        """
+        the __str__ method returns
+        a string representation of
+        the rectangle attribites
+        """
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
