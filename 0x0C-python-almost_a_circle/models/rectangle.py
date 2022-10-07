@@ -187,4 +187,6 @@ class Rectangle(Base):
         a string representation of
         the rectangle attribites
         """
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            self.__class__.__name__, self.id, self.x, self.y,
+               self.width, self.height)
