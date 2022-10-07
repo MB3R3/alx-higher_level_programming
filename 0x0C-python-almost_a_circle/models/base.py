@@ -1,11 +1,20 @@
 #!/usr/bin/python3
 """
-class Base
-with private class attribute
-__nb_objects
+Write a class called Base.
 """
-class Base:
 
+
+class Base:
+    """
+    class Base in which nb_objects is defined
+    as Private class attribute.
+    Methods:
+        to_json_string(list_dictionaries)
+        save_to_file(cls, list_objs)
+        from_json_string(json_string):
+        create(cls, **dictionary):
+        load_from_file(cls):
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
